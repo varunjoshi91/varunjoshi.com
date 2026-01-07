@@ -1,0 +1,135 @@
+.about {
+    background: var(--bg-secondary);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3xl);
+    align-items: start;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.intro {
+    font-size: var(--text-xl);
+    line-height: 1.7;
+    color: var(--text-primary);
+}
+
+.story p {
+    font-size: var(--text-base);
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.story strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.philosophy {
+    position: relative;
+    padding: var(--space-xl);
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-xl);
+    margin-top: var(--space-md);
+}
+
+.quoteIcon {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 4rem;
+    line-height: 1;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: Georgia, serif;
+}
+
+.philosophy p {
+    font-size: var(--text-lg);
+    font-style: italic;
+    color: var(--text-primary);
+    margin: 0;
+    padding-top: var(--space-md);
+}
+
+.pillars {
+    position: sticky;
+    top: 100px;
+}
+
+.pillarsTitle {
+    font-size: var(--text-xl);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--space-lg);
+}
+
+.pillarGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+}
+
+.pillarCard {
+    padding: var(--space-lg);
+}
+
+.pillarHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-sm);
+}
+
+.pillarIcon {
+    color: var(--accent-primary);
+}
+
+.pillarMetric {
+    font-size: var(--text-2xl);
+    font-weight: 800;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.pillarTitle {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--space-xs);
+}
+
+.pillarDesc {
+    font-size: var(--text-xs);
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+@media (max-width: 968px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .pillars {
+        position: relative;
+        top: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .pillarGrid {
+        grid-template-columns: 1fr;
+    }
+}
